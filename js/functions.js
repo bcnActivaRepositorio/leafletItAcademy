@@ -2,6 +2,8 @@
 "use strict";
 // raise the curtains
 document.getElementById("showMap").addEventListener("click", showDiv);
+// one to rule them all
+var popUp = new L.Popup();
 function showDiv() {
     var _a;
     readyOn();
@@ -22,6 +24,6 @@ function readyOn() {
     // add marker
     var marker = new L.Marker(new L.LatLng(41.3868561, 2.1661102));
     // content popup
-    var popUp = new L.popup().setContent("<b> Restaurant Centfocs!</b><br/><br/> Restaurante mediterr&aacute;neo<br/> Carrer de Balmes, 16, 08007 BCN");
+   popUp({ maxHeigth: 75, maxWidth: 200 }).setContent("<b> Restaurant Centfocs!</b><br/><br/> Restaurante mediterr&aacute;neo<br/> Carrer de Balmes, 16, 08007 BCN");
     marker.addTo(madeMap).bindPopup(popUp);
 }
