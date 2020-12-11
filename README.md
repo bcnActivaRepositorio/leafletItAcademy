@@ -1,10 +1,11 @@
 # Leaflet & City center @ItAcademy
 
 First part of the exercise
-  _ Map creation
+
+  ###### Map creation
   
-  _ Creation of marker
+  ###### Creation of marker
   
-  _ Popup marker
+  ###### Popup marker
   
  
