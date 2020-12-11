@@ -27,7 +27,7 @@ let scaleMap = new L.control.scale().addTo(madeMap);
 // add marker
 let marker = new L.Marker(new L.LatLng(41.3868561, 2.1661102));
 // content popup
-popUp({maxHeigth: 75, maxWidth: 200}).setContent("<b> Restaurant Centfocs!</b><br/><br/> Restaurante mediterr&aacute;neo<br/> Carrer de Balmes, 16, 08007 BCN")
+popUp = new L.Popup({maxHeigth: 75, maxWidth: 200}).setContent("<b> Restaurant Centfocs!</b><br/><br/> Restaurante mediterr&aacute;neo<br/> Carrer de Balmes, 16, 08007 BCN");
 marker.addTo(madeMap).bindPopup(popUp);
 
 
